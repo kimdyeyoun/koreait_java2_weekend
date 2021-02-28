@@ -4,17 +4,35 @@ public class Phone {
 	//필드(속성)
 	String phoneName;
 	String owner;
-	String color;
+	private String color;
 	int memory;
 	String phoneNumber;
 	
 	//생성자
-	//생성자가 저의되지 않았을 때만 컴파일러가 기본생성자 넣어줌
-	public Phone (){
-		super();
-	}
+	//생성자가 정의되지 않았을 때만 컴파일러가 기본생성자 넣어줌
+	public Phone (){}
+	
 	public Phone (String phoneName,String color,int memory) {
 		this.phoneName = phoneName;
+		this.color = color;
+		this.memory = memory;
+	}
+	
+	void setColor(String color ) {
+		this.color = color;
+	}
+	
+	String getColor() {
+		return color;
+	}
+	
+	// Phone의 모든 필드에 초기값을 넣어주는 생성자 만들기
+	public Phone (String phoneName,String owner,String color,int memory,String phoneNumber ) {
+		this.phoneName = phoneName;
+		this.owner = owner;
+		this.color = color;
+		this.memory = memory;
+		this.phoneNumber = phoneNumber;
 	}
 	
 	//메소드 (동작)
