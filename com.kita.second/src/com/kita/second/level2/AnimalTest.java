@@ -2,6 +2,17 @@ package com.kita.second.level2;
 
 public class AnimalTest {
 	public static void main(String[] args) {
+		Animal ani = new Animal("흰둥이");
+		ani.cry();
+		ani = new Cat("까미");
+		ani.cry();
+		ani = new Dog("점박이");
+		ani.cry();
+//		ani.bark();
+		
+		Dog d = (Dog)ani;
+		d.bark();
+		
 		Dog d1 = new Dog("누렁이");
 		System.out.println("d1의 이름은 "+d1.name);
 		d1.cry();

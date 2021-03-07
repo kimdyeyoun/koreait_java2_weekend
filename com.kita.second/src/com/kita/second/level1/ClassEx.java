@@ -14,6 +14,20 @@ public class ClassEx {
 	String field2;
 	int [] field3;
 	
+	int field4;
+	static int field5;
+	
+	void method4() {}
+	static void method5() {}
+	
+	static void methodTest() {
+//		field4 = 10;
+//		this.method4();
+		
+		field5 = 10;
+		method5();
+	}
+	
 	//생성자(필드 초기화) 생성클래스랑 이름동일
 	public ClassEx() {
 	// super(); 생략이되어있다. object와 부모와 자식관계
